@@ -69,11 +69,11 @@ body {
 @keyframes fadeInDown {
   0% {
     /*top: -0.5rem;*/
-    transform: translateY(0);
+    transform: translateY(0%);
   }
   100% {
     /*top: 4.861111111111112%;*/
-    transform: translateY(4.861111111111112%);
+    transform: translateY(4%);
   }
 }
 @keyframes fadeInDow {
@@ -112,17 +112,13 @@ body {
     width: 87.1875%;
     height: auto;
     left: 6.5625%;
-    /*top: 0;*/
     z-index: 1;
     -webkit-animation: fadeInDown 1s 0.5s 1 both;
     -moz-animation: fadeInDown 1s 0.5s 1 both;
     animation: fadeInDown 1s 0.5s 1 both;
 }
 #section1.active .topper{
-    top: 4.861111111111112%;
-    -webkit-animation: fadeInDown 1s 0.5s 1 both;
-    -moz-animation: fadeInDown 1s 0.5s 1 both;
-    animation: fadeInDown 1s 0.5s 1 both;
+    top: 4%;    
 }
 .top{
     background-color: rgba(255,99,99,1);
@@ -157,9 +153,6 @@ span,p{
 }
 #section1.active .centeer{
     top: 9.22063492063492%;
-    -webkit-animation: fadeInUp 1s 0.5s 1 both;
-    -moz-animation: fadeInUp 1s 0.5s 1 both;
-    animation: fadeInUp 1s 0.5s 1 both;
 }
 .center{
     background-color: rgba(255,255,255,0.2);
@@ -207,22 +200,22 @@ button{
     color: #fff;
 }
 .name{
-    top: 26.34126984126984%;
+    top: 28.34126984126984%;
 }
 .phone{
-    top: 34.07936507936508%;
+    top: 36.07936507936508%;
 }
 .wecha{
-    top: 41.817460317460316%;
+    top: 43.817460317460316%;
 }
 .content{
-    top: 49.952380952380956%;
+    top: 51.952380952380956%;
 }
 .address{
-    top: 58.78174603174604%;
+    top: 60.78174603174604%;
 }
 .submit{
-    top: 68.90079365079364%;
+    top: 70.90079365079364%;
 }
 
 
@@ -245,7 +238,7 @@ button{
     animation: fadeInDown 1s 1.5s 1 both;
 }
 #section2.active .apper{
-    top: 4.861111111111112%; 
+    top: 4%; 
 }
 .footeer{
     position: absolute;
@@ -258,7 +251,7 @@ button{
     animation: fadeInDow 1s 1.5s 1 both;
 }
 #section2.active .footeer{
-    top: 15%;
+    top: 12%;
 }
 .footer{
     height: 100%;
