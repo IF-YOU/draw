@@ -1,9 +1,8 @@
 html, body {
-   /* max-height: 100%;*/
+    min-height: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
-
 }
 
 html, body {
@@ -35,7 +34,6 @@ body {
     overflow: hidden;
 }
 .section{
-    height: 100%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -70,12 +68,23 @@ body {
 /*动画*/
 @keyframes fadeInDown {
   0% {
-    /*top: -0.5rem;*/
-    transform: translateY(0%);
+    top:0;
+   /* transform: translateY(0);*/
   }
   100% {
-    /*top: 4.861111111111112%;*/
-    transform: translateY(4%);
+    top: 4.861111111111112%;
+   /* transform: translateY(4.861111111111112%);*/
+  }
+}
+@keyframes fadeInDown2 {
+  0% {
+   top: 4.861111111111112%;
+     /*transform: translateY(4.861111111111112%);*/
+    
+  }
+  100% {
+    top: 4.861111111111112%;
+   /* transform: translateY(0);*/
   }
 }
 @keyframes fadeInDow {
@@ -84,8 +93,18 @@ body {
     transform: translateY(100%);
   }
   100% {
-    /*top: 15%;*/
+    top: 15%;
     transform: translateY(15%);
+  }
+}
+@keyframes fadeInDow2 {
+  0% {
+    /*top: 100%;*/
+    transform: translateY(15%);
+  }
+  100% {
+    top: 15%;
+    transform: translateY(100%);
   }
 }
 @keyframes fadeInUp {
@@ -106,32 +125,32 @@ body {
         transform:scale(1,1);
     }
 }
-@keyframes zoom{
-    0% {
-        transform: translateY(200%);
-        transform:scale(0,0);
-    }
-    100% {
-        transform: translateY(5%);
+@keyframes zoomIn2{
+    0%{
         transform:scale(1,1);
     }
+    100%{
+        transform:scale(0,0);
+    }
 }
-
 /*第一屏*/
 
-.topper{
+#section1 .topper{
     position: absolute;
     width: 87.1875%;
     height: auto;
     left: 6.5625%;
+  /*  top: 0;*/
     z-index: 1;
-    top: -4rem;
-    -webkit-animation: fadeInDown 1s 0.5s 1 both;
-    -moz-animation: fadeInDown 1s 0.5s 1 both;
-    animation: fadeInDown 1s 0.5s 1 both;
+    -webkit-animation: fadeInDown 1s 1s 1 both;
+    -moz-animation: fadeInDown 1s 1s 1 both;
+    animation: fadeInDown 1s 1s 1 both;
 }
 #section1.active .topper{
-    top: 4%;    
+    /*top: 4.861111111111112%;*/
+    -webkit-animation: fadeInDown2 1s  both;
+    -moz-animation: fadeInDown2 1s both;
+    animation: fadeInDown2 1s both;
 }
 .top{
     background-color: rgba(255,99,99,1);
@@ -153,12 +172,12 @@ span,p{
     line-height: inherit;
     background-color: initial;
 }
-.centeer{
+#section1 .centeer{
     width: 87.1875%;
     height: auto;
     position: absolute;
     left: 6.5625%;
-    top: 100%;
+    /*top: 100%;*/
     z-index: 0;
     -webkit-animation: fadeInUp 1s 0.5s 1 both;
     -moz-animation: fadeInUp 1s 0.5s 1 both;
@@ -166,6 +185,9 @@ span,p{
 }
 #section1.active .centeer{
     top: 9.22063492063492%;
+    -webkit-animation: fadeInUp 1s 0.5s 1 both;
+    -moz-animation: fadeInUp 1s 0.5s 1 both;
+    animation: fadeInUp 1s 0.5s 1 both;
 }
 .center{
     background-color: rgba(255,255,255,0.2);
@@ -178,19 +200,21 @@ span,p{
     font-family: 黑体;
     line-height: 1.2rem;
 }
-.input{
+#section1 .input{
     width: 62.5%;
     height: 6.349206349206349%;
     position: absolute;
     left: 19.2236328125%;
     z-index: 0;
-    top: 100%;
-    -webkit-animation: zoomIn 1s 2.5s 1 both;
-    -moz-animation: zoomIn 1s 2.5s 1 both;
-    animation: zoomIn 1s 2.5s 1 both;
+   /* transform:scale(-1,-1);*/
+    -webkit-animation: zoomIn2 1s both;
+    -moz-animation: zoomIn2 1s  both;
+    animation: zoomIn2 1s  both;
 }
 #section1.active .input{
-    transform:scale(1,1);
+   -webkit-animation: zoomIn 1s 1.5s 1 both;
+    -moz-animation: zoomIn 1s 1.5s 1 both;
+    animation: zoomIn 1s 1.5s 1 both;
 }
 input,button{
     background-color: #fff;
@@ -213,31 +237,31 @@ button{
     background: #F55B2E;
     color: #fff;
 }
-#section1.active .name{
-    top: 32.34126984126984%;
+.name{
+    top: 26.34126984126984%;
 }
-#section1.active .phone{
-    top: 40.07936507936508%;
+.phone{
+    top: 34.07936507936508%;
 }
-#section1.active .wecha{
-    top: 47.817460317460316%;
+.wecha{
+    top: 41.817460317460316%;
 }
-#section1.active .content{
-    top: 55.952380952380956%;
+.content{
+    top: 49.952380952380956%;
 }
-#section1.active .address{
-    top: 64.78174603174604%;
+.address{
+    top: 58.78174603174604%;
 }
-#section1.active .submit{
-    top: 72.90079365079364%;
+.submit{
+    top: 68.90079365079364%;
 }
 
 
 /*第二屏*/
 
-.apper{
+#section2 .apper{
     position: absolute;
-    top: -0.5rem;
+   /* top:0%;*/
     left: 6.5625%;
     width: 87.1875%;
     height: 3rem;
@@ -247,26 +271,30 @@ button{
     font-size: 1rem;
     text-align: center; 
     z-index: 1;
-    -webkit-animation: fadeInDown 1s 1.5s 1 both;
-    -moz-animation: fadeInDown 1s 1.5s 1 both;
-    animation: fadeInDown 1s 1.5s 1 both;
+	-webkit-animation: fadeInDown2  1s 1.5s  both;
+    -moz-animation: fadeInDown2  1s 1.5s  both;
+    animation: fadeInDown2  1s 1.5s  both;
 }
 #section2.active .apper{
-    top: 4%; 
+	-webkit-animation: fadeInDown 1.5s  both;
+    -moz-animation: fadeInDown 1.5s  both;
+    animation: fadeInDown 1.5s  both;
+   
 }
-.footeer{
+#section2 .footeer{
     position: absolute;
     width: 87.1875%;
     height: 65%;
-    top: 100%;
     left: 6.5625%;    
     z-index: 0;
-    -webkit-animation: fadeInDow 5s 1s 1 both;
-    -moz-animation: fadeInDow 5s 1s 1 both;
-    animation: fadeInDow 5s 1s 1 both;
+    -webkit-animation: fadeInDow2 1s 1.5s 1 both;
+    -moz-animation: fadeInDow2 1s 1.5s 1 both;
+    animation: fadeInDow2 1s 1.5s 1 both;
 }
 #section2.active .footeer{
-    top: 12%;
+     -webkit-animation: fadeInDow 1.5s both;
+    -moz-animation: fadeInDow  1.5s  both;
+    animation: fadeInDow 1.5s both;
 }
 .footer{
     height: 100%;
@@ -287,7 +315,7 @@ button{
 
 /*第三屏*/
 
-.pic{
+#section3 .pic{
     overflow: hidden;
     z-index: 1;
     position: absolute;   
@@ -295,15 +323,16 @@ button{
     background: #fff;
     padding: 0 1rem;
     margin: 0 2rem;
-    top: 200%;
-    transform:scale(0.5,0.5);
-    -webkit-animation: zoom 7s 1.5s 1 both;
-    -moz-animation: zoom 7s 1.5s 1 both;
-    animation: zoom 7s 1.5s 1 both; 
+    -webkit-animation: zoomIn2 1s 2.5s 1 both;
+    -moz-animation: zoomIn2 1s 2.5s 1 both;
+    animation: zoomIn2 1s 2.5s 1 both; 
+    top:0%;
 }
 #section3.active .pic{
-    transform:scale(1,1);
-    top: 5%;
+	top:5%;
+    -webkit-animation: zoomIn  2.5s  both;
+    -moz-animation: zoomIn  2.5s  both;
+    animation: zoomIn  2.5s  both; 
 }
 .works{
     width: 100%;
