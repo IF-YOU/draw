@@ -177,7 +177,7 @@ span,p{
     height: auto;
     position: absolute;
     left: 6.5625%;
-    /*top: 100%;*/
+    top: 100%;
     z-index: 0;
     -webkit-animation: fadeInUp 1s 0.5s 1 both;
     -moz-animation: fadeInUp 1s 0.5s 1 both;
@@ -238,22 +238,22 @@ button{
     color: #fff;
 }
 .name{
-    top: 26.34126984126984%;
+    top: 32.34126984126984%;
 }
 .phone{
-    top: 34.07936507936508%;
+    top: 40.07936507936508%;
 }
 .wecha{
-    top: 41.817460317460316%;
+    top: 47.817460317460316%;
 }
 .content{
-    top: 49.952380952380956%;
+    top: 55.952380952380956%;
 }
 .address{
-    top: 58.78174603174604%;
+    top: 64.78174603174604%;
 }
 .submit{
-    top: 68.90079365079364%;
+    top: 72.90079365079364%;
 }
 
 
@@ -261,7 +261,7 @@ button{
 
 #section2 .apper{
     position: absolute;
-   /* top:0%;*/
+    top:-0.5%;
     left: 6.5625%;
     width: 87.1875%;
     height: 3rem;
@@ -293,6 +293,7 @@ button{
     animation: fadeInDows 1s 1.5s 1 both;
 }
 #section2.active .footeer{
+    top: 12%;
      -webkit-animation: fadeInDow 1.5s both;
     -moz-animation: fadeInDow  1.5s  both;
     animation: fadeInDow 1.5s both;
