@@ -68,23 +68,23 @@ body {
 /*动画*/
 @keyframes fadeInDown {
   0% {
-    top:0;
-   /* transform: translateY(0);*/
+    /*top:0;*/
+    transform: translateY(0);
   }
   100% {
-    top: 4.861111111111112%;
-   /* transform: translateY(4.861111111111112%);*/
+    /*top: 4.861111111111112%;*/
+    transform: translateY(4.861111111111112%);
   }
 }
-@keyframes fadeInDown2 {
+@keyframes fadeInDowns {
   0% {
-   top: 4.861111111111112%;
-     /*transform: translateY(4.861111111111112%);*/
+   /*top: 4.861111111111112%;*/
+    transform: translateY(4.861111111111112%);
     
   }
   100% {
-    top: 4.861111111111112%;
-   /* transform: translateY(0);*/
+    /*top: 4.861111111111112%;*/
+    transform: translateY(4.861111111111112%);
   }
 }
 @keyframes fadeInDow {
@@ -97,7 +97,7 @@ body {
     transform: translateY(15%);
   }
 }
-@keyframes fadeInDow2 {
+@keyframes fadeInDows {
   0% {
     /*top: 100%;*/
     transform: translateY(15%);
@@ -125,7 +125,7 @@ body {
         transform:scale(1,1);
     }
 }
-@keyframes zoomIn2{
+@keyframes zoomIns{
     0%{
         transform:scale(1,1);
     }
@@ -140,7 +140,7 @@ body {
     width: 87.1875%;
     height: auto;
     left: 6.5625%;
-  /*  top: 0;*/
+    top: 0;
     z-index: 1;
     -webkit-animation: fadeInDown 1s 1s 1 both;
     -moz-animation: fadeInDown 1s 1s 1 both;
@@ -148,9 +148,9 @@ body {
 }
 #section1.active .topper{
     top: 4.861111111111112%;
-    -webkit-animation: fadeInDown2 1s  both;
-    -moz-animation: fadeInDown2 1s both;
-    animation: fadeInDown2 1s both;
+    -webkit-animation: fadeInDowns 1s  both;
+    -moz-animation: fadeInDowns 1s both;
+    animation: fadeInDowns 1s both;
 }
 .top{
     background-color: rgba(255,99,99,1);
@@ -207,9 +207,9 @@ span,p{
     left: 19.2236328125%;
     z-index: 0;
    /* transform:scale(-1,-1);*/
-    -webkit-animation: zoomIn2 1s both;
-    -moz-animation: zoomIn2 1s  both;
-    animation: zoomIn2 1s  both;
+    -webkit-animation: zoomIns 1s both;
+    -moz-animation: zoomIns 1s  both;
+    animation: zoomIns 1s  both;
 }
 #section1.active .input{
    -webkit-animation: zoomIn 1s 1.5s 1 both;
@@ -271,11 +271,12 @@ button{
     font-size: 1rem;
     text-align: center; 
     z-index: 1;
-    -webkit-animation: fadeInDown2  1s 1.5s  both;
-    -moz-animation: fadeInDown2  1s 1.5s  both;
-    animation: fadeInDown2  1s 1.5s  both;
+    -webkit-animation: fadeInDowns  1s 1.5s  both;
+    -moz-animation: fadeInDowns  1s 1.5s  both;
+    animation: fadeInDowns  1s 1.5s  both;
 }
 #section2.active .apper{
+    top: 4.861111111111112%;
     -webkit-animation: fadeInDown 1.5s  both;
     -moz-animation: fadeInDown 1.5s  both;
     animation: fadeInDown 1.5s  both;
@@ -287,9 +288,9 @@ button{
     height: 65%;
     left: 6.5625%;    
     z-index: 0;
-    -webkit-animation: fadeInDow2 1s 1.5s 1 both;
-    -moz-animation: fadeInDow2 1s 1.5s 1 both;
-    animation: fadeInDow2 1s 1.5s 1 both;
+    -webkit-animation: fadeInDows 1s 1.5s 1 both;
+    -moz-animation: fadeInDows 1s 1.5s 1 both;
+    animation: fadeInDows 1s 1.5s 1 both;
 }
 #section2.active .footeer{
      -webkit-animation: fadeInDow 1.5s both;
@@ -323,9 +324,9 @@ button{
     background: #fff;
     padding: 0 1rem;
     margin: 0 2rem;
-    -webkit-animation: zoomIn2 1s 2.5s 1 both;
-    -moz-animation: zoomIn2 1s 2.5s 1 both;
-    animation: zoomIn2 1s 2.5s 1 both; 
+    -webkit-animation: zoomIns 1s 2.5s 1 both;
+    -moz-animation: zoomIns 1s 2.5s 1 both;
+    animation: zoomIns 1s 2.5s 1 both; 
     top:0%;
 }
 #section3.active .pic{
