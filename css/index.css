@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+
 }
 
 html, body {
@@ -34,6 +35,7 @@ body {
     overflow: hidden;
 }
 .section{
+    height: 100%;
     margin: 0 auto;
     position: absolute;
     left: 0;
