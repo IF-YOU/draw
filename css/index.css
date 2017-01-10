@@ -79,7 +79,7 @@ body {
 @keyframes fadeInDow {
   0% {
     /*top: 100%;*/
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
   100% {
     /*top: 15%;*/
@@ -89,7 +89,7 @@ body {
 @keyframes fadeInUp {
   0% {
     /*top: 100%;*/
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
   100% {
     /*top: 17.22063492063492%;*/
@@ -104,6 +104,16 @@ body {
         transform:scale(1,1);
     }
 }
+@keyframes zoom{
+    0% {
+        transform: translateY(200%);
+        transform:scale(0,0);
+    }
+    100% {
+        transform: translateY(5%);
+        transform:scale(1,1);
+    }
+}
 
 /*第一屏*/
 
@@ -113,6 +123,7 @@ body {
     height: auto;
     left: 6.5625%;
     z-index: 1;
+    top: -4rem;
     -webkit-animation: fadeInDown 1s 0.5s 1 both;
     -moz-animation: fadeInDown 1s 0.5s 1 both;
     animation: fadeInDown 1s 0.5s 1 both;
@@ -145,7 +156,7 @@ span,p{
     height: auto;
     position: absolute;
     left: 6.5625%;
-    /*top: 100%;*/
+    top: 200%;
     z-index: 0;
     -webkit-animation: fadeInUp 1s 0.5s 1 both;
     -moz-animation: fadeInUp 1s 0.5s 1 both;
@@ -171,9 +182,10 @@ span,p{
     position: absolute;
     left: 19.2236328125%;
     z-index: 0;
-    -webkit-animation: zoomIn 1s 1.5s 1 both;
-    -moz-animation: zoomIn 1s 1.5s 1 both;
-    animation: zoomIn 1s 1.5s 1 both;
+    top: 100%;
+    -webkit-animation: zoomIn 1s 2.5s 1 both;
+    -moz-animation: zoomIn 1s 2.5s 1 both;
+    animation: zoomIn 1s 2.5s 1 both;
 }
 #section1.active .input{
     transform:scale(1,1);
@@ -199,22 +211,22 @@ button{
     background: #F55B2E;
     color: #fff;
 }
-.name{
+#section1.active .name{
     top: 32.34126984126984%;
 }
-.phone{
+#section1.active .phone{
     top: 40.07936507936508%;
 }
-.wecha{
+#section1.active .wecha{
     top: 47.817460317460316%;
 }
-.content{
+#section1.active .content{
     top: 55.952380952380956%;
 }
-.address{
+#section1.active .address{
     top: 64.78174603174604%;
 }
-.submit{
+#section1.active .submit{
     top: 72.90079365079364%;
 }
 
@@ -223,7 +235,7 @@ button{
 
 .apper{
     position: absolute;
-    /*top: 0;*/
+    top: -0.5rem;
     left: 6.5625%;
     width: 87.1875%;
     height: 3rem;
@@ -244,11 +256,12 @@ button{
     position: absolute;
     width: 87.1875%;
     height: 65%;
+    top: 200%;
     left: 6.5625%;    
     z-index: 0;
-    -webkit-animation: fadeInDow 1s 1.5s 1 both;
-    -moz-animation: fadeInDow 1s 1.5s 1 both;
-    animation: fadeInDow 1s 1.5s 1 both;
+    -webkit-animation: fadeInDow 5s 1s 1 both;
+    -moz-animation: fadeInDow 5s 1s 1 both;
+    animation: fadeInDow 5s 1s 1 both;
 }
 #section2.active .footeer{
     top: 12%;
@@ -280,12 +293,15 @@ button{
     background: #fff;
     padding: 0 1rem;
     margin: 0 2rem;
-    -webkit-animation: zoom 1s 2.5s 1 both;
-    -moz-animation: zoom 1s 2.5s 1 both;
-    animation: zoom 1s 2.5s 1 both; 
+    top: 200%;
+    transform:scale(0.5,0.5);
+    -webkit-animation: zoom 7s 1.5s 1 both;
+    -moz-animation: zoom 7s 1.5s 1 both;
+    animation: zoom 7s 1.5s 1 both; 
 }
 #section3.active .pic{
-    top: 5%; 
+    transform:scale(1,1);
+    top: 5%;
 }
 .works{
     width: 100%;
