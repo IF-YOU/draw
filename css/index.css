@@ -79,7 +79,7 @@ body {
 @keyframes fadeInDow {
   0% {
     /*top: 100%;*/
-    transform: translateY(200%);
+    transform: translateY(100%);
   }
   100% {
     /*top: 15%;*/
@@ -89,7 +89,7 @@ body {
 @keyframes fadeInUp {
   0% {
     /*top: 100%;*/
-    transform: translateY(200%);
+    transform: translateY(100%);
   }
   100% {
     /*top: 17.22063492063492%;*/
@@ -156,7 +156,7 @@ span,p{
     height: auto;
     position: absolute;
     left: 6.5625%;
-    top: 200%;
+    top: 100%;
     z-index: 0;
     -webkit-animation: fadeInUp 1s 0.5s 1 both;
     -moz-animation: fadeInUp 1s 0.5s 1 both;
@@ -256,7 +256,7 @@ button{
     position: absolute;
     width: 87.1875%;
     height: 65%;
-    top: 200%;
+    top: 100%;
     left: 6.5625%;    
     z-index: 0;
     -webkit-animation: fadeInDow 5s 1s 1 both;
