@@ -147,7 +147,7 @@ body {
     animation: fadeInDown 1s 1s 1 both;
 }
 #section1.active .topper{
-    /*top: 4.861111111111112%;*/
+    top: 4.861111111111112%;
     -webkit-animation: fadeInDown2 1s  both;
     -moz-animation: fadeInDown2 1s both;
     animation: fadeInDown2 1s both;
